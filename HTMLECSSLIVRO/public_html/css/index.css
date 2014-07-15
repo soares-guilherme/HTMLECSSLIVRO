@@ -8,3 +8,30 @@ and open the template in the editor.
     Author     : Windows 7
 */
 
+*{
+    box-sizing: border-box;/*Obrigad o navegador a respeitar os limites de width e heigth*/
+}
+
+.container{
+    margin: 10px auto;
+    text-align: center;
+    width: 800px;
+}
+
+.buttom{
+    border: 1px solid #999;
+    height: 26px;
+    padding: 5px 15px;
+    width: 250px;
+}
+
+.box{
+    background-color: limegreen;
+    width: 250px;
+}
+
+.box-with-padding{
+    background-color: lightblue;
+    padding: 0 25px;
+    width: 250px;
+}
