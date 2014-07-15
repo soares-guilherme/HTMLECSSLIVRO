@@ -82,6 +82,7 @@ h1::after{
     padding:10px;
     position: relative;
     width: 300px;
+    margin: 10px 0;
 }
 .help::before{
     border-color: transparent #d3cdae transparent transparent;
@@ -92,4 +93,27 @@ h1::after{
     margin-top: -14px;
     position: absolute;
     top: 50%;
+}
+.tip::before{
+    content: '\261E'; /*simbolo unicode para desenhar com caracteres*/
+    margin-right: 10px;
+    font-size: 3em;/*aumenta o tamanho do desenho*/
+}
+
+blockquote{
+    margin:10px 0;
+    color: #444;
+    font-style: italic;
+}
+/*Colocar aspas ao redor do texto com fonte maior e cor diferente*/
+
+blockquote::before, blockquote::after{
+    color: #000;
+    font-size: 3em;
+}
+blockquote::before{
+    content: '\201c';
+}
+blockquote::after{
+    content: '\201d';
 }
