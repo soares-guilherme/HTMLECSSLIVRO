@@ -138,3 +138,13 @@ existindo as classses variantes, mas mantendo o padrão*/
 .small-button{
     font-size: 0.9em;
 }
+/*Padronização para o momento da impressão do documento*/
+@media print{
+    *{
+    background: transparent !important;/*!important esta tag dá prioridade, para que nenhuma outra propriedade sobreescreva ela*/
+    border-color: #000 !important;
+    box-shadow:none !important;
+    color:#000 !important;
+    text-shadow: none !important;
+   } 
+}
