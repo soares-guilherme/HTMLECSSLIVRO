@@ -147,4 +147,69 @@ existindo as classses variantes, mas mantendo o padrão*/
     color:#000 !important;
     text-shadow: none !important;
    } 
+   a{
+       text-decoration: underline !important;/*para no momento da impressão ser possível indentificar os links*/
+   }
+}
+
+/******Efeitos da tabela*****************************************************************************************************/
+
+tabel{
+    width: 500px;
+}
+td{
+     
+    border: 1px dotted #666;
+    padding: 5px;
+    width: 200px;
+}
+td a{
+    color:#3b5998;
+}
+.expense, .profit, .actions{
+    text-align: right;
+}
+.expense, .profit{
+    font-weight: bold;
+}
+.expense{color: red;}
+.profit{color: green;}
+
+.actions a{
+    font-size:0.9em;
+    color: white;
+    padding: 2px 5px;
+    background-color: #3b5998;
+    text-decoration: none;
+}
+/*Efeitos para impressão da tabela*/
+@media print{
+    *{
+        color: #000;
+    }
+    table{
+        width: 100%;
+    }
+    td{
+        border-color: #000;
+    }
+    a::after{
+       content: '('attr(href)')';/*este efeito mostra o href do link na impressão*/
+        margin-left: 2px;
+    }
+    .actions{
+        display: none;
+    }
+    .expense::before{
+        content: '-';
+    }
+    .expense::after{
+        content: ' - Despesas';
+    }
+    .profit::before{
+        content: '+';
+    }
+    .profit::after{
+        content: ' - Receita';
+    }
 }
