@@ -45,7 +45,7 @@ section{
     margin: 40px auto;
     width: 400px;
 }
-h1{
+.container h1{
     font-family: 'Press Start 2P', cursive;/*fpo adocopmado um link no html (pesquisar o site https://www.google.com/fonts/)*/
     font-size: 1.2em;
     text-align: center;
@@ -57,7 +57,7 @@ h1{
     position: relative;
     width: 419px;
 }
-h1::before{
+ h1::before{
     border-color: transparent #7c0000 #7c0000 transparent;
     border-style: solid;
     border-width: 5px;
@@ -66,7 +66,7 @@ h1::before{
     position: absolute;
     top: -10px;
 }
-h1::after{
+ h1::after{
     border-color: transparent transparent #7c0000 #7c0000;
     border-style: solid;
     border-width: 5px;
@@ -339,7 +339,7 @@ ul.vermelho{
     background-color: red;
 }
 .nav{
-    background-color: black;
+    background-color: #b9522d;
     height: 30px;
     list-style: none;
     padding: 0;
@@ -352,4 +352,137 @@ ul.vermelho{
     line-height: 30px;
     text-align: center;
     width: 69px;
+}
+.nav a{
+    color: white;
+}
+.nav .current{
+    background-color: #a64a28;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+/***********************************sOMBREAMENTO EM TEXTOS**************************************************/
+h2{
+    background-color: #1d9ac0;
+    color: #fff;
+    padding: 10px;
+    text-shadow: 2px 4px 2px rgba(0,0,0,0.3);
+}
+/*********************************Text-Shadow*****************************************************************************/
+.status{
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 7px 10px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+.failed{
+    background-color: #bd2c00;
+}
+.shipped{
+    background-color: #6cc644;
+}
+.processing{
+    background-color: #fc9800;
+}
+/*********************************Funçãosinha do livro****************************************************************************/
+.book{
+   margin-top: 20px;
+   text-align: left;
+   background-color: #FAFAFA;
+   background-image: linear-gradient(#FAFAFA,#EEE);
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   padding: 10px;
+   width: 600px;
+}
+h4{
+    color:#bd2c00;
+    font-size: 1.2em;
+    margin: 0; 
+}
+h5{
+    font-size: 1em;
+    margin: 5px 0;
+}
+.avaliable{
+    background-color: #6cc644;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding:3px 7px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+ul.livro{
+    border-radius: 5px;
+    border: 1px solid rbga(0,0,0,0.3);
+    background-color: #56b4ef;
+    background-image:linear-gradient(top, #56b4ef, #148eda);
+    float: left;
+    line-style:none;
+    height: auto;
+    padding:0;
+    width: auto;
+    color: white;
+    border:none;
+    padding: 0;
+    width: 230px;
+    margin-right: 10px;
+}
+
+.livro li{
+    float: left;
+    line-height: 35px;
+    font-size: 0.9em;
+    width: auto;
+    text-align: left;
+    border-left: none;
+    border-right: none;
+}
+
+@font-face{
+    font-family: 'IconicFill';
+    src:url('iconic_fill.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon{
+    width: 200px;
+    color: #fff;
+    display: block;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.9);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+.icon:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.icon.paper{
+    border-top: none;
+}
+.icon.package{
+    border-bottom: none;
+}
+.icon::before{
+    font-family: 'IconicFill';
+    margin: 0px 5px;
+}
+.paper::before{
+    content: '\e00b';
+}
+.digital::before{
+    content: '\e004';
+}
+.package::before{
+    content: '\e022';
+}
+.clear{
+    clear:both;
+}
+.book p{
+    margin-top: 10px;
 }
