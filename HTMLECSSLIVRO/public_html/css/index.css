@@ -12,6 +12,17 @@ and open the template in the editor.
     box-sizing: border-box;/*Obrigad o navegador a respeitar os limites de width e heigth*/
 }
 
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;/*serve para ajustar bugs de margem entre o container e elementos com float*/
+}
+.clearfix::after{
+    clear: both;/*produz o mesmo efeito que se fosse colocado um elemento vazio após o conteúdo no html*/
+}
+.clearfix{
+    *zoom: 1;/*técnica para não dar trave no IE6 e 7*/
+}
+
 .container{
     margin: 10px auto;
     width: 800px;
@@ -524,6 +535,7 @@ margin: 0px;
 .posts{
     width: 600px;
     border: none;
+    float: left;
     margin: 30px auto;
 } 
 .posts h1{
@@ -541,4 +553,29 @@ margin: 0px;
 }
 .posts p{
     clear: both;
+}
+/***********************aside com outros posts********************************************************/
+aside{
+    background-color: #fffbe4;
+    border: 1px solid #c9bc8f;
+    float: right;
+    padding: 10px;
+    width: 200px;
+}
+aside li{
+float: none;
+line-height: 1em;
+font-size: 0.9em;
+width: auto;
+text-align: left;
+border-left: none;
+border-right: none;
+}
+aside h7{
+    margin: 0 auto;
+}
+.page{
+    padding: 10px 0;
+    background-color: yellowgreen;
+    margin: 0 auto;
 }
