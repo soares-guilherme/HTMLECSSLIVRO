@@ -14,7 +14,6 @@ and open the template in the editor.
 
 .container{
     margin: 10px auto;
-    text-align: center;
     width: 800px;
 }
 
@@ -45,7 +44,7 @@ section{
     margin: 40px auto;
     width: 400px;
 }
-.container h1{
+.container h1.top{
     font-family: 'Press Start 2P', cursive;/*fpo adocopmado um link no html (pesquisar o site https://www.google.com/fonts/)*/
     font-size: 1.2em;
     text-align: center;
@@ -57,7 +56,7 @@ section{
     position: relative;
     width: 419px;
 }
- h1::before{
+ h1.top::before{
     border-color: transparent #7c0000 #7c0000 transparent;
     border-style: solid;
     border-width: 5px;
@@ -66,7 +65,7 @@ section{
     position: absolute;
     top: -10px;
 }
- h1::after{
+ h1.top::after{
     border-color: transparent transparent #7c0000 #7c0000;
     border-style: solid;
     border-width: 5px;
@@ -485,4 +484,61 @@ ul.livro{
 }
 .book p{
     margin-top: 10px;
+}
+
+.blk{
+    display: inline-block;
+}
+/***************************CLEAR***************************************************/
+.new{
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+   
+}
+.new h2{
+background-color: white;
+color: black;
+padding: 0px;
+text-shadow: none;
+float: left;
+margin: 0 20px 20px 0;
+
+}
+.new h4{
+margin-top: 5px;    
+color: black;
+font-size: 1em;
+margin: 0px;
+}
+.new p{
+     clear: both;
+}
+/******************************segunda imagem da ponte*************************************************/
+#segund{
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/***************************************Section Posts****************************************************/
+.posts{
+    width: 600px;
+    border: none;
+    margin: 30px auto;
+} 
+.posts h1{
+    float: left;
+    margin: 0 0 1px;
+}
+
+.timestamp{
+   background-color: #000;
+   color: #fff;
+   float: right;
+   font-size: 0.9em;
+   padding: 5px 10px;
+   margin-bottom: 5px;
+}
+.posts p{
+    clear: both;
 }
