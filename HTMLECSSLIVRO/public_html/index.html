@@ -14,7 +14,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="./css/index.css"/> 
         
         <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-        <script type="text/javascript" src="js/modal.js"></script>
+        
     </head>
     <body>
         <div class="container">
@@ -224,11 +224,17 @@ and open the template in the editor.
             <a href="javascript:;" class="close">
                 Fechar
                 <script type="text/javascript">
+                    
                     $('.overlay, .close').on('click',function(){
                     $('.overlay, .notice').hide();
                     });
                 </script>
             </a>
+            <div class="flexbox">
+                <span class="one box">1</span>
+                <span class="two box">2</span>
+                <span class="three box">3</span>
+            </div>
         </div>
     </body>
 </html>
