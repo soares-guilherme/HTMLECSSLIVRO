@@ -12,6 +12,8 @@ and open the template in the editor.
         <link href="http://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./css/meyer.css"/> 
         <link rel="stylesheet" type="text/css" href="./css/index.css"/> 
+        <script type="text/javascript" src="js/jquery-1.11.1"></script>
+        <script type="text/javascript" src="js/modal.js"></script>
     </head>
     <body>
         <div class="container">
@@ -179,34 +181,39 @@ and open the template in the editor.
                 a em tordo da vida  de Ted Mosby
             </p>
             <div class="page clearfix">
-            <section class="posts">
-                <article>
-                    <h1><a href="#">Título do post #1</a></h1>
-                    <span class="timestamp">3 semanas atrás</span>
-                    <p>
-                        Uma breve descrição sobre o assunto abordado no post númer 1...
-                    </p>
-                </article>
-                <article>
-                    <h1><a href="#">Título do post #2</a></h1>
-                    <span class="timestamp">3 semanas atrás</span>
-                    <p>
-                        Uma breve descrição sobre o assunto abordado no post númer 2...
-                    </p>
-                </article>
-            </section>
-            <aside>
-                <h7>Veja outros posts</h7>
-                <ol>
-                    <li><a href="">Post #3</a></li>
-                    <li><a href="">Post #4</a></li>
-                    <li><a href="">Post #5</a></li>
-                    <li><a href="">Post #6</a></li>
-                </ol>
-            </aside> 
-                    
-            
+                <section class="posts">
+                    <article>
+                        <h1><a href="#">Título do post #1</a></h1>
+                        <span class="timestamp">3 semanas atrás</span>
+                        <p>
+                            Uma breve descrição sobre o assunto abordado no post númer 1...
+                        </p>
+                    </article>
+                    <article>
+                        <h1><a href="#">Título do post #2</a></h1>
+                        <span class="timestamp">3 semanas atrás</span>
+                        <p>
+                            Uma breve descrição sobre o assunto abordado no post númer 2...
+                        </p>
+                    </article>
+                </section>
+                <aside>
+                    <h7>Veja outros posts</h7>
+                    <ol>
+                        <li><a href="">Post #3</a></li>
+                        <li><a href="">Post #4</a></li>
+                        <li><a href="">Post #5</a></li>
+                        <li><a href="">Post #6</a></li>
+                    </ol>
+                </aside> 
             </div>
+            <div class="notice">
+                    <h1>Atenção</h1>
+                    <p>Aqui você pode exibir uma mensagem importante que ela irá sobrepor todo o conteúdo do seu site.</p>
+            </div>    
+            <div class="overlay"></div>
+            <a id="show-modal" href="javascript:;">Exibir modal</a>
+            <a href="javascript:;" class="close">Fechar</a>
         </div>
     </body>
 </html>
