@@ -12,7 +12,8 @@ and open the template in the editor.
         <link href="http://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./css/meyer.css"/> 
         <link rel="stylesheet" type="text/css" href="./css/index.css"/> 
-        <script type="text/javascript" src="js/jquery-1.11.1"></script>
+        
+        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
         <script type="text/javascript" src="js/modal.js"></script>
     </head>
     <body>
@@ -212,8 +213,22 @@ and open the template in the editor.
                     <p>Aqui você pode exibir uma mensagem importante que ela irá sobrepor todo o conteúdo do seu site.</p>
             </div>    
             <div class="overlay"></div>
-            <a id="show-modal" href="javascript:;">Exibir modal</a>
-            <a href="javascript:;" class="close">Fechar</a>
+            <a id="show-modal" href="javascript:;">
+                Exibir modal
+                <script type="text/javascript">
+                    $('#show-modal').on('click', function(){
+                    $('.overlay, .notice').show();
+                    });
+                </script>
+            </a>
+            <a href="javascript:;" class="close">
+                Fechar
+                <script type="text/javascript">
+                    $('.overlay, .close').on('click',function(){
+                    $('.overlay, .notice').hide();
+                    });
+                </script>
+            </a>
         </div>
     </body>
 </html>
